@@ -21,7 +21,7 @@ function CountryInfo({chosenCountry}) {
                     {chosenCountry.name.common}
                 </div>
                 <div className="info_block">
-                    <div className="info">
+                    <div>
                         <div>
                             <p>Популяція: <span>{chosenCountry.population  === undefined ? "-" : chosenCountry.population }</span></p>
                             <p>Регіон: <span>{chosenCountry.region === undefined ? "-" : chosenCountry.region}</span></p>
@@ -32,7 +32,6 @@ function CountryInfo({chosenCountry}) {
                             <p>Столиця: <span>{chosenCountry.capital === undefined ? "-" : chosenCountry.capital}</span></p>
                         </div>
                         <div className="languages">
-                            {/* <p>Curiencies: <span>{currenciesKeys === null ? "-" : currenciesKeys.map((item, index) => `${chosenCountry.currencies[item].name}${currenciesKeys[index+1] === undefined? "" : ","} `)}</span></p> */}
                             <p>Мова: <span>{langKeys.map((item, index) => `${chosenCountry.languages[item]}${langKeys[index+1] === undefined? "" : ","} `)}</span></p>
                         </div>
                     </div>

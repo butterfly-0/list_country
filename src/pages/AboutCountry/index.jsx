@@ -7,7 +7,6 @@ import CountryInfo from "../../components/CountryInfo";
 
 
 function AboutCountry() {
-
   const { indexCountry } = useParams();
   const [country, setCountry] = useState(null);
   const [showInfoAboutCountry, setShowInfoAboutCountry] = useState(true)
@@ -26,10 +25,8 @@ function AboutCountry() {
     }
     fetchCountry();
   }, [indexCountry]);
-
- 
   if (!country) {
-    return <div>Loading...</div>;
+    return <div>Загрузка...</div>;
   }
   if (country === "Error") {
     return <div>Помилка...</div>;
@@ -42,7 +39,6 @@ function AboutCountry() {
     showDiv = <CountryMap chosenCountry={country}></CountryMap>
 
   }
-
   return (
     <>
       <Header />

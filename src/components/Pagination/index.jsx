@@ -3,16 +3,12 @@ import "./Pagination.css";
 
 const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   const pageNumbers = [];
-  
   for (let i = 1; i <= totalPages; i++) {
     pageNumbers.push(i);
   }
-
   const numberOfpagesOnWhichSide = window.innerWidth <= 645 ? 1 : 2;
-
   const renderPageNumbers = () => {
     const pageList = [];
-
     let hasStartedDots = false;
     let hasEndedDots = false;
 
@@ -26,7 +22,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
         (item >= currentPage - numberOfpagesOnWhichSide &&
           item <= currentPage + numberOfpagesOnWhichSide)
       ) {
-        //
         pageList.push(
           <button
             key={item}
@@ -48,7 +43,6 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
     });
     return pageList;
   };
-
   return (
     <div className="pagination">
       <div

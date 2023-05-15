@@ -13,24 +13,12 @@ a{
 }
 
 span {
-  /* font-weight: 100;  */
    font-size: 20px;  
    color: rgb(134, 134, 134);
 }
-
 .flags_block{
-  /* margin: 0px 60px 0px 0px; */
   margin-left: 50px;
 }
-
 .name_country{
   font-size: 50px;
-}
-
-.info a{
-  /* max-width: 400px; */
-}
-
-.borders{
-  /* max-width: 600px; */
 }

@@ -27,8 +27,7 @@ function CountriesList({ contriesOnPage}) {
         <div className="uuu">Список країн
 </div>
         {contriesOnPage.map((item) => (
-          <Link
-            onMouseEnter={() => handleMouseEnter(item)}
+          <Link onMouseEnter={() => handleMouseEnter(item)}
             onMouseLeave={() => handleMouseLeave()}
             key={item.name.common}
             to={`/about/${item.cca2}`}
@@ -39,8 +38,7 @@ function CountriesList({ contriesOnPage}) {
                 <img src={item.flags.png} alt="" />
                 <p>{item.name.common}</p>
               </div>
-            </div>
-          </Link>
+            </div></Link>
         ))}
       </div>
       <div className="aboutCountry_container">      

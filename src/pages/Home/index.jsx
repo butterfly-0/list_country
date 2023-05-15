@@ -30,25 +30,21 @@ function Home() {
   useEffect(
     () => async () => {
       try {
-        const result = await axios("https://restcountries.com/v3.1/all");
-
+      const result = await axios("https://restcountries.com/v3.1/all");
         const resultId = result.data.map((item, i) => {
           return { ...item, id: i + 1 };
         });
-
         setAllCountries(resultId);
       } catch {
-        setAllCountries("Error");
+        setAllCountries("Помилка...");
       }
     },
     []
   );
-
   return (
     <>
       <Header allContries={allContries}/>
       <div className="container">
-        
         <div className="contries">
           <CountriesList contriesOnPage={currentCountry} Contries={allContries} />
         </div>

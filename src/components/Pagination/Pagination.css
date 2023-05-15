@@ -6,7 +6,6 @@
   margin: 40px 0px 0px 0px;
   justify-content: center;
 }
-
 .pagination button {
   margin: 0px 3px 3px 3px;
   width: 55px;
@@ -16,20 +15,16 @@
   color: #000000;
   background-color: #a5dbe9;
 }
-
 .pagination button:hover {
   border-color: #ffffff;
   background-color: #716e6e;
 }
-
 .button_clicked {
   outline: 2px solid #ffffff;
 }
-
 .pages{
   display: flex;
 }
-
 .pages span {
   display: block;
   text-align: center;
@@ -37,7 +32,6 @@
   color: #ffffff;
   font-size: 20px;
 }
-
 .arrow{
     margin: -5px 12px 0px 12px;
     color: white;

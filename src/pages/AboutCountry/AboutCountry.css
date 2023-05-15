@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
 }
-
 .button_{
     border-radius: 20px;
     border: 10px solid transparent;

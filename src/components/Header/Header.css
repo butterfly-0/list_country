@@ -3,35 +3,27 @@
     font-size: 25px;
     color: #000000;
 }
-
 .header_container{
     display: flex;
     width: 35%;
     margin: 10px 0px 9px 0px;
 }
-
 .header a {
     color: #ffffff;
 }
-
 .input_box{
     width: 80%;
     display: flex;
     margin: 0px 0px 10px 0px;
   }
-
   .input_box input{
     outline: none;
-    /* outline-offset: none; */
     border: 1px solid white;
-    /* height: 25px; */
     margin: 0px 10px 0px 0px;
     padding: 5px 10px;
     font-size: 13px;
     border-radius: 10px;
-    /* color: rgb(0, 0, 0); */
   }
-
   .input_box button{
     background: rgb(73, 72, 72);
     border: none;
@@ -42,12 +34,10 @@
     height: 100%;
     border: 1px solid rgb(0, 0, 0);
   }
-
   .input_box button:hover{
   background: #7f7f81;
   border: 1px solid rgb(255, 255, 255);
   }
-
   .active:hover{
     background: rgb(83, 121, 140);
     cursor: pointer;

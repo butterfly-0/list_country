@@ -5,18 +5,14 @@ import "./header.css"
 function Header({allContries}) {
   const [countriesSearch, setCountriesSearch] = useState([])
   const [contryInSearch, setContryInSearch] = useState(null)
-
   const handleSearchChange = (e) => {
     if (e.target.value === '') {
       setCountriesSearch([])
       setContryInSearch(null)
       return
     }
-
     const resultArr = allContries.filter((item) => String(item.name.common).toLowerCase().includes(e.target.value.toLowerCase()))
-
     resultArr.length === 1 ? resultArr[0].name.common.toLowerCase() === e.target.value.toLowerCase() ? setContryInSearch(resultArr[0]) : setContryInSearch(null) :
-
     setCountriesSearch(resultArr)
   };
   return (
