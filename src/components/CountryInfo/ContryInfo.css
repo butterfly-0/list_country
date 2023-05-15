@@ -1,0 +1,36 @@
+.flags{
+  margin-top: -40px ;
+  width:300px;
+}
+.country_information_box{
+  display: flex;
+  flex-direction: row-reverse;
+  color: rgb(221, 221, 221);
+  font-size: 25px;
+}
+a{
+  color: rgb(204, 202, 202); 
+}
+
+span {
+  /* font-weight: 100;  */
+   font-size: 20px;  
+   color: rgb(134, 134, 134);
+}
+
+.flags_block{
+  /* margin: 0px 60px 0px 0px; */
+  margin-left: 50px;
+}
+
+.name_country{
+  font-size: 50px;
+}
+
+.info a{
+  /* max-width: 400px; */
+}
+
+.borders{
+  /* max-width: 600px; */
+}
